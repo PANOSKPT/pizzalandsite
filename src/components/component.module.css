@@ -1,0 +1,99 @@
+.Header {
+  width: 100%;
+  height: 15px;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+}
+.Nav {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.text {
+  color: var(--dl-color-gray-white);
+  transition: 0.3s;
+}
+.text:hover {
+  color: var(--dl-color-primary-500);
+}
+.text:active {
+  color: var(--dl-color-primary-500);
+}
+.text1 {
+  color: var(--dl-color-gray-white);
+  transition: 0.3s;
+  margin-left: var(--dl-space-space-twounits);
+}
+.text1:hover {
+  color: var(--dl-color-primary-500);
+}
+.text1:active {
+  color: var(--dl-color-primary-500);
+}
+.text2 {
+  color: var(--dl-color-gray-white);
+  transition: 0.3s;
+  margin-left: var(--dl-space-space-twounits);
+}
+.text2:hover {
+  color: var(--dl-color-primary-500);
+}
+.text2:active {
+  color: var(--dl-color-primary-500);
+}
+.BtnGroup {
+  width: 164px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.button {
+  color: var(--dl-color-gray-white);
+  width: 122px;
+  align-self: center;
+  text-align: center;
+  border-width: 0px;
+  margin-right: var(--dl-space-space-twounits);
+  background-color: #4eb4ff;
+}
+.text3 {
+  font-style: normal;
+  font-family: Montserrat;
+  font-weight: 700;
+  border-radius: var(--dl-radius-radius-radius8);
+}
+.icon {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  display: none;
+}
+@media(max-width: 991px) {
+  .Nav {
+    display: none;
+  }
+  .BtnGroup {
+    display: none;
+  }
+  .icon {
+    display: flex;
+  }
+}
+@media(max-width: 767px) {
+  .Header {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .Header {
+    padding: var(--dl-space-space-unit);
+  }
+}
